@@ -1,0 +1,28 @@
+{
+  "name": "dracupid-node-boilerplate",
+  "version": "0.0.1",
+  "description": "A personal node module generator.",
+  "main": "index.js",
+  "bin": {
+    "dgen": "bin.js"
+  },
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dracupid <dracupid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "*",
+    "commander": "*",
+    "nokit": "^0.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dracupid/dracupid-node-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dracupid/dracupid-node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dracupid/dracupid-node-boilerplate#readme"
+}
