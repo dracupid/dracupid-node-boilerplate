@@ -59,5 +59,16 @@ module.exports =
             else
                 Promise.reject "File Not Found!"
 
+    update: (name) ->
+        name = path.join(__dirname, '../res/' + name + '*')
+        fs.glob name, all: true
+        .then (name) ->
+            if name[0]
+                fs.readFile name[0], encoding: 'utf8'
+                .then (content) ->
+                    fs.writeFile path.basename(name[0]), content
+            else
+                Promise.reject "File Not Found!"
+
     shebang: '#!/usr/bin/env node'
 

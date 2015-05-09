@@ -35,4 +35,12 @@ cmder
         , (e) ->
             console.error e.stack or e.red
 
+cmder
+    .command 'update <filename>'
+    .description 'update file content'
+    .action (filename) ->
+        $.update filename
+        .catch (e) ->
+            console.error e.stack or e.red
+
 cmder.parse process.argv
