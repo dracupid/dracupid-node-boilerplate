@@ -10,10 +10,11 @@ Usage: dgen [command]
 
   Commands:
 
-    init|i          init node project
-    clean|cl        clean current folder
-    shebang|sb      show node shebang
-    cat <filename>  see file content
+    init|i             init node project
+    clean|cl           clean current folder
+    shebang|sb         show node shebang
+    cat <filename>     see file content
+    update <filename>  update file content
 
   Options:
 

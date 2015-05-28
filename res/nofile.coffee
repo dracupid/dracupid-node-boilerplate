@@ -1,5 +1,6 @@
 kit = require 'nokit'
-{Promise, fs, _} = kit
+{fs, _} = kit
+Promise ?= kit.Promise
 drives = kit.require 'drives'
 
 module.exports = (task, option) ->

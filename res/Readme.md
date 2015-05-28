@@ -8,10 +8,10 @@
 
 ## Installation
 ```bash
-npm i <%= name %> -g
+npm i <%= name %>
 ```
 
 ## Usage
 
 ## License
-MIT@Dracupid
+MIT@Jingchen Zhao

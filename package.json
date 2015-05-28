@@ -1,6 +1,6 @@
 {
   "name": "dracupid-node-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A personal node module generator.",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "coffee-script": "*",
     "commander": "*",
-    "nokit": "^0.6.5"
+    "nokit": "^0.7.6"
   },
   "repository": {
     "type": "git",
