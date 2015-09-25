@@ -4,7 +4,7 @@ path = require 'path'
 kit = require 'nokit'
 fs = kit.fs
 Promise = kit.Promise
-kit.require 'colors'
+br = kit.require 'brush'
 
 shebang = '#!/usr/bin/env node'
 
@@ -21,7 +21,7 @@ renderReadme = ->
 
 module.exports =
     init: (opts) ->
-        console.log "Creating Files...".green
+        console.log br.green "Creating Files..."
         fs.glob path.join(__dirname, '../res/*'), all: true
         .then (files) ->
             Promise.all files.map (f) ->
@@ -37,13 +37,13 @@ module.exports =
         .then ->
             renderReadme()
         .then ->
-            console.log "git init...".green
+            console.log br.green "git init..."
             kit.exec 'git init'
         .then ->
-            console.log "npm init...".green
+            console.log br.green "npm init..."
             kit.spawn 'npm', ['init']
         .then ->
-            console.log 'done!'.green
+            console.log br.green 'done!'
         .catch (e) ->
             console.error e.stack or e
 

@@ -15,7 +15,7 @@
   "dependencies": {
     "coffee-script": "*",
     "commander": "*",
-    "nokit": "^0.7.6"
+    "nokit": "^0.14.7"
   },
   "repository": {
     "type": "git",
